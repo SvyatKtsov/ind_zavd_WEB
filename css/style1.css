@@ -1,0 +1,205 @@
+
+body {
+  background-color: #101010;
+  color: #e2e2e2;
+}
+.section-title {
+  color: #c7ff00;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "BrahmsGotischCyr";
+}
+.about-text {
+  margin-bottom: 30px;
+}
+.service-box h4{
+  margin-bottom: 20px;
+  font-family: "BrahmsGotischCyr";
+}
+.contact-info {
+  color: #c7ff00;
+}
+
+@font-face {
+  font-family: "BrahmsGotischCyr";
+  src: url("BrahmsGotischCyr.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "DreiFraktur";
+  src: url("DreiFraktur.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: "Fortuna Gothic FlorishC";
+  src: url("Fortuna Gothic FlorishC.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: "KHTitle";
+  src: url("KHTitle.otf") format("opentype");
+  font-weight: normal;
+  font-size: normal;
+}
+body {
+  font-family: "KHTitle";
+}
+.navbar {
+  height: 13vh;
+  font-size: 3vh;
+  background-color: rgba(6, 10, 16, 1);
+  font-family: "KHTitle";
+}
+.navbar ul {
+  margin: auto;
+}
+.navbar ul li {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.navbar ul li img {
+  height: 60px;
+  max-height: 10vh;
+}
+.navbar-nav .nav-link {
+  color: rgba(191, 192, 190, 1);
+}
+
+header {
+  position: relative;
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+header h1 {
+  position: absolute;
+  bottom: 10vh;
+  left: 12vh;
+}
+
+.main-text-green {
+  color: #87a210;
+}
+
+.lozung {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+.lozung li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #D0D0D0;
+  font-size: 28px;
+  font-family: "BrahmsGotischCyr";
+}
+
+
+/* ------------------------------------------------------- CHANGE -------------------------------------------------------*/
+.menu-text-first_page {
+  font-family: "BrahmsGotischCyr", sans-serif;
+  display: inline-block; /* змінює елемент на рядково-блочний, щоб transform працював */
+  transition: transform 0.35s, color 0.35s;
+}
+.menu-text-first_page:hover {
+  font-family: "BrahmsGotischCyr", sans-serif;
+    color: #87A210;
+    transform: scale(1.5); /* збільшує текст на 30% */
+    transition: 0.35s;
+}
+
+.layout-fellguard-text {
+  width: 1106px;
+  height: 185px;
+  top: 737px;
+  left: 119px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+.header-fellguard-text {
+  position: relative;
+  font-family: "KHTitle";
+font-size: 128px;
+font-weight: 400;
+line-height: 166.4px;
+text-align: left;
+text-decoration-skip-ink: none;
+
+  color: #989E80;
+  
+}
+
+
+
+.custom-text {
+  text-align: left; 
+  padding-right: 20px; 
+}
+
+.custom-image {
+  text-align: right; 
+}
+
+.section-title {
+  color: #87A210;
+  /*font-size: 1.8em;*/
+  font-size: 30px;
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+}
+.section-p-text {
+  font-size: 24px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  color: #7F8858;
+}
+
+
+.section-title-ul {
+  text-align: left;
+  font-size: 24px; 
+  font-family: "BrahmsGotischCyr", sans-serif; 
+  color: #989E80;
+}
+
+
+.footer-contact_info {
+  color:  #87A210;
+  font-size: 32px;
+}
+
+.footer-p {
+  color: #A5A59B;
+  font-size: 28px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  text-align: left;
+}
+
+
+.button-join-us {
+  background-color: #333333; 
+  color: white; 
+  font-family: "BrahmsGotischCyr", sans-serif;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+}
+
+
+.button-join-us:hover {
+  transform: scale(1.1); 
+  background-color: #E97451; 
+}
