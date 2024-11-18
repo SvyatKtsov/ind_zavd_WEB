@@ -192,6 +192,28 @@ header h1 {
   color: #989E80;
 }
 
+.section-title-3 {
+  color: #989E80;
+  font-size: 50px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  position: relative;
+  text-align: left;
+}
+.section-title-ptext-3{
+  color: white;
+  margin-left: auto auto;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+
+.page2-futurePlans {
+  color: #384143;
+  
+}
+
+
+
 
 .footer-contact_info {
   color:  #87A210;
