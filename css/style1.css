@@ -125,13 +125,17 @@ header h1 {
 
 }
 .header-fellguard-text {
-  position: relative;
+  position: absolute;
+  bottom: 300px;
+
   font-family: "KHTitle";
-font-size: 128px;
-font-weight: 400;
-line-height: 166.4px;
-text-align: left;
-text-decoration-skip-ink: none;
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 166.4px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+
+
 
   color: #989E80;
   
@@ -151,7 +155,6 @@ text-decoration-skip-ink: none;
 .section-title {
   color: #87A210;
   /*font-size: 1.8em;*/
-  font-size: 30px;
   font-size: 64px;
   font-weight: bold;
   margin-top: 20px;
@@ -162,6 +165,23 @@ text-decoration-skip-ink: none;
   font-size: 24px;
   font-family: "BrahmsGotischCyr", sans-serif;
   color: #7F8858;
+}
+.bottom-top_margin {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.section-title-2 {
+  color: #989E80;
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+}
+.section-p-text-2 {
+  font-size: 24px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  color: #EEEE;
 }
 
 
@@ -182,18 +202,22 @@ text-decoration-skip-ink: none;
   color: #A5A59B;
   font-size: 28px;
   font-family: "BrahmsGotischCyr", sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 
 .button-join-us {
+  position: relative;
+  top: 100px;
+
+
   background-color: #333333; 
   color: white; 
   font-family: "BrahmsGotischCyr", sans-serif;
-  padding: 10px 20px; 
+  padding: 20px 30px; 
   border: none; 
   border-radius: 5px; 
-  font-size: 16px; 
+  font-size: 20px; 
   cursor: pointer; 
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
 }
