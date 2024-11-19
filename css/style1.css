@@ -208,8 +208,42 @@ header h1 {
 
 
 .page2-futurePlans {
-  color: #384143;
+  background-color: #384143;
+}
+.section-title-ptext-4{
+  margin-left: 50px;
   
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+.na_golovnu-page2 {
+  color: #BFC0BE; 
+  font-size: 18px; 
+  font-family: 
+  'BrahmsGotischCyr', sans-serif; 
+  text-decoration: none;
+  text-decoration-line: none;
+}
+.na_golovnu-page2_button {
+  position: relative;
+  left: 50px;
+  margin-bottom: 30px;
+  background-color: #333333; 
+  color: white; 
+  font-family: "BrahmsGotischCyr", sans-serif;
+  border: none; 
+  border-radius: 5px; 
+  font-size: 20px; 
+  cursor: pointer; 
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+}
+.na_golovnu-page2_button:hover {
+  transform: scale(1.1); 
+  background-color: green; 
+}
+
+.page3-best_guards-p {
+  color: white;
 }
 
 
