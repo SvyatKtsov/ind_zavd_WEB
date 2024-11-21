@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "BrahmsGotischCyr";
+  src: url("BrahmsGotischCyr.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DreiFraktur";
+  src: url("DreiFraktur.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: "Fortuna Gothic FlorishC";
+  src: url("Fortuna Gothic FlorishC.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: "KHTitle";
+  src: url("KHTitle.otf") format("opentype");
+  font-weight: normal;
+  font-size: normal;
+}
+/* Загальні стилі */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #060a10;
+  color: #e2e2e2;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button {
+  font-family: "BrahmsGotischCyr", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Навігаційна панель */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060a10;
+  width: 100%;
+  height: 15vh;
+  margin: 0 auto;
+}
+.navbar ul li {
+  transition: transform 0.35s;
+}
+.navbar ul li:hover {
+  transform: scale(1.5);
+  transition: 0.35s;
+}
+.navbar img {
+  width: 120px;
+  height: auto;
+  margin: 0 50px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  margin: 0 50px;
+}
+.navbar ul li a {
+  color: #bfc0be;
+  font-size: 28px;
+}
+.navbar ul li a.activeA {
+  color: #87a210;
+}
+
+.gallery-image {
+  width: 100%;
+}
+.section-background {
+  background-color: #cac3ac;
+}
+.gallery-container {
+  margin-right: 500px;
+}
+.gallery-title {
+  padding: 0 80px;
+  color: #87a210;
+  font-size: 74px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  margin-bottom: 20px;
+}
+.gallery-description {
+  color: white;
+  padding: 0 80px;
+  font-size: 34px;
+  margin-left: 80px;
+  margin-left: 0px;
+}
+
+.section-white {
+  background-color: white;
+  padding-top: 1.5%;
+}
+
+.section-title {
+  color: #87a210;
+  font-size: 40px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  margin-bottom: 30px;
+}
+
+.best-guard-image {
+  height: 80%;
+  width: auto;
+}
+
+.details-title {
+  color: #7f8858;
+  font-size: 30px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+}
+
+.label {
+  color: #7f8858;
+}
+
+.value {
+  color: #cac3ac;
+}
+
+.achievements-list {
+  color: #cac3ac;
+  font-size: 30px;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  margin-left: 20px;
+}
+
+.footer-contact_info {
+  color: #87a210;
+}
+
+.footer-p {
+  color: #a5a59b;
+}
+footer {
+  background-color: #060a10;
+}
+footer .row .col-md-4:last-child {
+  display: flex;
+  justify-content: center;
+}
+footer .row .col-md-4:first-child {
+  padding-left: 100px;
+}
+footer .row .col-md-4 h4,
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.button-join-us {
+  background-color: #060a10;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  color: white;
+  font-family: "BrahmsGotischCyr", sans-serif;
+  padding: 20px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.button-join-us:hover {
+  transform: scale(1.1);
+  background-color: #e97451;
+}
+
+/* Медійні запити */
+@media (max-width: 769px) {
+  .navbar {
+    height: 10vh;
+    width: 90%;
+  }
+  .navbar img {
+    width: 100px;
+    margin: 0 20px;
+  }
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  .navbar ul li a {
+    font-size: 20px;
+  }
+
+  .gallery-image {
+    width: 100%;
+  }
+  .gallery-container {
+    margin-right: 500px;
+  }
+  .gallery-title {
+    padding: 0 50px;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .gallery-description {
+    padding: 0 50px;
+    font-size: 32px;
+    margin-left: 80px;
+    margin-left: 0px;
+  }
+
+  .section-title {
+    padding-top: 15px;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .details-title {
+    font-size: 27px;
+  }
+  .achievements-list {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  footer .row .col-md-4:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  footer .row .col-md-4:first-child {
+    padding-left: 50px;
+  }
+  footer .row .col-md-4 h4,
+  p {
+    display: flex;
+    justify-content: center;
+  }
+  footer img {
+    width: 130px;
+    height: auto;
+  }
+  .button-join-us {
+    padding: 15px 22px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 481px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar img {
+    width: 70px;
+    margin: 0 10px;
+  }
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
+  .gallery-image {
+    width: 100%;
+  }
+  .gallery-title {
+    padding: 0 10px;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .gallery-description {
+    padding: 0 10px;
+    font-size: 24px;
+  }
+
+  .section-title {
+    padding-top: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .col-md-4,
+  .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .details-title {
+    font-size: 24px;
+  }
+  .achievements-list {
+    font-size: 18px;
+    margin-left: 12px;
+  }
+
+  footer .row .col-md-4:last-child {
+    display: inline-block;
+    justify-content: center;
+  }
+  footer .row .col-md-4:first-child {
+    padding-left: 10px;
+  }
+  footer .row .col-md-4 h4,
+  p {
+    display: flex;
+    justify-content: center;
+  }
+  footer img {
+    width: 80px;
+    height: auto;
+  }
+  footer .row .col-md-4 {
+    max-width: 33.333%;
+  }
+  .button-join-us {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .footer-p {
+    font-size: 9px;
+  }
+  .footer-contact_info {
+    font-size: 14px;
+  }
+}
+
+.gallery-container {
+  padding: 20px;
+}
+
+.padding-left-right {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.col-md-4,
+.col-md-8 {
+  box-sizing: border-box;
+  padding: 15px;
+  margin: auto;
+}
+
+.footer-contact_info {
+  margin-bottom: 10px;
+}
+
+.footer-p {
+  margin: 0;
+}
