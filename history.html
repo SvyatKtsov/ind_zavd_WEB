@@ -10,45 +10,128 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />    
-    <link rel="stylesheet" href="css/style1.css" />
-  </head>
+    <link rel="stylesheet" href="css/style1.css">
+
+    
+<style>
+
+      body {
+        background-color: #060a10;
+        color: #e2e2e2;
+        font-family: "BrahmsGotischCyr", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1, h2, h3, h4, h5, h6, p, li, a, button {
+        font-family: "BrahmsGotischCyr", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+        /* Навігаційна панель */
+        .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #060a10;
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+        transition: transform 0.35s;
+      }
+      .navbar ul li {
+        transition: transform 0.35s;
+      }
+      .navbar ul li:hover {
+        transform: scale(1.5);
+        transition: 0.35s;
+        color: #87A210;
+      }
+      .navbar ul li a:hover {
+        transform: scale(1.5);
+        transition: 0.35s;
+        color: #87A210;
+      }
+        .navbar img {
+          width: 120px;
+          height: auto;
+          margin: 0 50px;
+        }
+        .navbar ul {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .navbar ul li {
+          margin: 0 50px;          
+        }
+        .navbar ul li a {
+          color: #BFC0BE;
+          font-size: 28px;
+        }
+      
+
+       
+      
+
+  @media (max-width: 769px) {
+        .navbar {
+          height: 10vh;
+          width: 90%;
+        }
+        .navbar img {
+          width: 100px;
+          margin: 0 20px;
+        }
+        .navbar ul li {
+          margin: 0 20px;
+        }
+        .navbar ul li a {
+          font-size: 20px;
+        }
+     }
+
+  @media (max-width: 481px) {
+        .navbar {
+          width: 100%;
+        }
+        .navbar img {
+          width: 70px;
+          margin: 0 10px;
+        }
+        .navbar ul li {
+          margin: 0 10px;
+        }
+        .navbar ul li a {
+          font-size: 12px;
+        }
+      }
+</style>
+
+
+
+</head>
 
 
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li>
-              <a class="navbar-brand" href="#">
-                <img src="images/logo1.png" alt="Fellguard_logo" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                ><span class="menu-text-first_page">Головна</span></a>
-                <!-- ---------------------------------------------------------- CHANGE ----------------------------------------------------------   -->
-                <!--<span style="color: #87a210">Головна</span></a>-->
-            </li>
-            <!-- ---------------------------------------------------------- CHANGE ----------------------------------------------------------   -->
-            <li class="nav-item"><a class="nav-link" href="history.html"><span class="menu-text-first_page" style="text-decoration: underline;">Історія</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="menu-text-first_page">Галерея</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="careers.html"><span class="menu-text-first_page">Кар'єра</span></a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar">
+      <a href="#"><img src="images/logo1.png" alt="Fellguard_logo" /></a>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="history.html" style="text-decoration: underline;">Історія</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="careers.html">Кар'єра</a></li>
+      </ul>
+    </nav>
   
       <!-- Header (як секція) Section -->
     <section class="container text-center main-text-green">
@@ -82,25 +165,25 @@
 
         <ul class="section-title-ul">
           <li class="section-title-ptext-3 px-3">
-            <span style="color: #7F8858; font-size: 28px;">1963 рік</span> — Заснування компанії "Fellguard".
+            <span class="highlight-year">1963 рік</span> — Заснування компанії "Fellguard".
             Початковий склад складається з 3 охоронців, кожен з яких має свій унікальний набір навичок:
             бойові мистецтва, стратегічне планування та інстинкти для захисту.
           </li>
           <li class="section-title-ptext-3 px-3">
-            <span style="color: #7F8858; font-size: 28px;">1969 рік</span> — Розширення бізнесу: компанія підписує свій перший великий контракт на охорону замку магістра Силмара.
+            <span class="highlight-year">1969 рік</span> — Розширення бізнесу: компанія підписує свій перший великий контракт на охорону замку магістра Силмара.
             Це стало переломним моментом у розвитку, оскільки компанія отримала визнання серед важливих осіб і торгових партнерів.
           </li>
           <li class="section-title-ptext-3 px-3">
-            <span style="color: #7F8858; font-size: 28px;">1982 рік</span> — Відкриття філій у інших частинах королівства, що дозволило забезпечити охорону на великій території.
+            <span class="highlight-year">1982 рік</span> — Відкриття філій у інших частинах королівства, що дозволило забезпечити охорону на великій території.
             Додатково було введено послугу особистої охорони для високопосадовців.
           </li>
           <li class="section-title-ptext-3 px-3">
-            <span style="color: #7F8858; font-size: 28px;">1994 рік</span> — Підписання контракту з великими торговими компаніями, які потребували послуг для захисту вантажів і складів.
+            <span class="highlight-year">1994 рік</span> — Підписання контракту з великими торговими компаніями, які потребували послуг для захисту вантажів і складів.
             Це значно збільшило дохід компанії та допомогло розширити команду охоронців.
           </li>
           <li class="section-title-ptext-3 px-3">
-            <span style="color: #7F8858; font-size: 28px;">2017 рік</span> — Впровадження нових технологій відеонагляду та стратегічного планування, що підняло ефективність наших охоронців на новий рівень.
-          </li>
+            <span class="highlight-year">2017 рік</span> — Впровадження нових технологій відеонагляду та стратегічного планування, що підняло ефективність наших охоронців на новий рівень.
+          </li>          
         </ul>
       </section>
     </div>
@@ -114,20 +197,20 @@
   
       
   <section class="page2-futurePlans">
-    <section style="color: #989E80; font-size: 40px; font-family: 'BrahmsGotischCyr', sans-serif; margin-bottom: 20px; margin-left: 40px;">Плани на майбутнє</section>
-    <section style="color: #B3B3B3; font-size: 30px; font-family: 'BrahmsGotischCyr', sans-serif; margin-bottom: 40px; margin-left: 40px;">
-      Наша мета — стати лідером на ринку охорони, надаючи послуги найвищої якості.
-    </section>
-    <div class="section-title-ptext-4 px-1">
-      <h2 style="color: #DEDEDE; font-size: 26px; font-family: 'BrahmsGotischCyr', sans-serif;">У майбутньому ми плануємо:</h2>
-      <ul style="color: #DEDEDE; font-size: 22px; font-family: 'BrahmsGotischCyr', sans-serif;">
-        <li>
-          Розширення на міжнародний рівень, відкриття нових філій у інших королівствах.
-        </li>
-        <li>Впровадження нових технологій, таких як безпілотники для спостереження та використання магічних артефактів для підвищення рівня безпеки.</li>
-        <li>Залучення нових партнерів та розширення кола клієнтів шляхом надання спеціалізованих охоронних послуг для магічних об'єктів та істот.</li>
-      </ul>
-    </div>
+      <section class="future-plans-title">Плани на майбутнє</section>
+      <section class="future-plans-description">
+        Наша мета — стати лідером на ринку охорони, надаючи послуги найвищої якості.
+      </section>
+      <div class="future-plans-details">
+        <h2>У майбутньому ми плануємо:</h2>
+        <ul>
+          <li>
+            Розширення на міжнародний рівень, відкриття нових філій у інших королівствах.
+          </li>
+          <li>Впровадження нових технологій, таких як безпілотники для спостереження та використання магічних артефактів для підвищення рівня безпеки.</li>
+          <li>Залучення нових партнерів та розширення кола клієнтів шляхом надання спеціалізованих охоронних послуг для магічних об'єктів та істот.</li>
+        </ul>
+      </div>
     <button class="na_golovnu-page2_button">
       <a href="index.html" class="na_golovnu-page2">На головну...</a>
     </button>
@@ -138,7 +221,7 @@
        <footer class="text-center py-4 bg-dark text-light">
         <div class="row">
           <div class="col-md-4 service-box">
-            <img src="images/logo1.png" alt="logo" />
+            <img  class="page2-img-footer" src="images/logo1.png" alt="logo" />
           </div>
           <div class="col-md-4 service-box">
             <h4 class="footer-contact_info">Контактна інформація:</h4>

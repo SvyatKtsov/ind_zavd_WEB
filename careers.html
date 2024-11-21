@@ -11,151 +11,238 @@
       crossorigin="anonymous"
     />    
     <link rel="stylesheet" href="css/style1.css" />
-  </head>
+
+
+
+    <style>
+        body {
+          background-color: #060a10;
+          color: #e2e2e2;
+          font-family: "BrahmsGotischCyr", sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, li, a, button {
+          font-family: "BrahmsGotischCyr", sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+          /* навігаційна панель */
+          .navbar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #060a10;
+          width: 100%;
+          height: 15vh;
+          margin: 0 auto;
+          transition: transform 0.35s;
+        }
+        .navbar ul li {
+          transition: transform 0.35s;
+        }
+        .navbar ul li:hover {
+          transform: scale(1.5);
+          transition: 0.35s;
+          color: #87A210;
+        }
+        .navbar ul li a:hover {
+          transform: scale(1.5);
+          transition: 0.35s;
+          color: #87A210;
+        }
+          .navbar img {
+            width: 20%;
+            height: auto;
+            margin: 0 50px;
+          }
+          .navbar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          .navbar ul li {
+            margin: 0 50px;          
+          }
+          .navbar ul li a {
+            color: #BFC0BE;
+            font-size: 28px;
+          }
+        
+
+        
+        
+
+    @media (max-width: 769px) {
+          .navbar {
+            height: 10vh;
+            width: 90%;
+          }
+          .navbar img {
+            width: 80px; 
+            height: auto;
+            margin: 0 20px; 
+          }
+
+          .navbar ul li {
+            margin: 0 20px;
+          }
+          .navbar ul li a {
+            font-size: 20px;
+          }
+      }
+
+    @media (max-width: 481px) {
+          .navbar {
+            width: 100%;
+          }
+          .navbar img {
+            padding-left: 100px;
+            width: 10%;
+            margin: 0 10px;
+          }
+          .navbar ul li {
+            margin: 0 10px;
+          }
+          .navbar ul li a {
+            font-size: 12px;
+          }
+        }
+    </style>
+</head>
+
 
 <body>
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li>
-              <a class="navbar-brand" href="#">
-                <img src="images/logo1.png" alt="Fellguard_logo" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                ><span class="menu-text-first_page">Головна</span></a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="history.html"><span class="menu-text-first_page">Історія</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html"><span class="menu-text-first_page">Галерея</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="careers.html"><span class="menu-text-first_page" style="text-decoration: underline;">Кар'єра</span></a></li>
-          </ul>
-        </div>
-      </nav>   
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#"><img src="images/logo1.png" alt="Fellguard_logo" class="page4-nav-img"/></a>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="history.html">Історія</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="careers.html" style="text-decoration: underline;">Кар'єра</a></li>
+    </ul>
+  </nav>   
       
-    <section style="background-color: #D5D5D5; height: 500px;">
-        <h1 style="color: #87A210; font-size: 50px; font-family: 'BrahmsGotischCyr', sans-serif; margin-bottom: 20px; margin-left: 30px; padding-top: 30px;">Кар’єра</h1>
-        <p style="color: #7F8858; font-size: 40px; font-family: 'BrahmsGotischCyr', sans-serif; margin-bottom: 20px; margin-left: 30px;">Як стати частиною команди "Fellguard"</p>
-        <p style="color: #161A37; font-size: 28px; font-family: 'BrahmsGotischCyr', sans-serif; padding-left: 30px; margin-top: 30px; width: 70%;">Ми завжди шукаємо талановитих і
-           відданих людей, готових приєднатися до нашої команди. Якщо ви прагнете працювати в професіональній 
-          і дружній атмосфері, забезпечувати безпеку та захист важливих осіб і об'єктів, то кар'єра в "Fellguard" — це ваш шанс.
-          <br>
-          <br>
-          Наші співробітники — це не лише охоронці, а й частина великої родини, яка працює для досягнення спільної мети.
-          Ми надаємо можливість не тільки працювати, а й розвиватися, отримувати нові навички та досягати кар'єрних висот.
-        </p>
-    </section>
+  <section class="career-section">
+    <h1 class="career-title">Кар’єра</h1>
+    <p class="career-subtitle">Як стати частиною команди "Fellguard"</p>
+    <p class="career-description">
+      Ми завжди шукаємо талановитих і відданих людей, готових приєднатися до нашої команди. Якщо ви прагнете працювати в професіональній 
+      і дружній атмосфері, забезпечувати безпеку та захист важливих осіб і об'єктів, то кар'єра в "Fellguard" — це ваш шанс.
+      <br><br>
+      Наші співробітники — це не лише охоронці, а й частина великої родини, яка працює для досягнення спільної мети.
+      Ми надаємо можливість не тільки працювати, а й розвиватися, отримувати нові навички та досягати кар'єрних висот.
+    </p>
+  </section>
+  
 
 
-    <section style="background-color: white; padding-bottom: 50px;">
-      <div class="row justify-content-center">
-        <div class="col-md-8 service-box">
-          <section>
-            <h2 class="section-title-3" style="margin-bottom: 20px; margin-top: 20px; font-size: 26px;">Вимоги до кандидатів:</h2>
-    
-            <ul class="section-title-ul">
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 26px;">Досвід роботи:</span> — <span style="color: black;"> досвід у сфері охорони або військової служби є великим плюсом. 
-                  Однак, ми також приймаємо кандидатів без досвіду, якщо ви готові пройти відповідне навчання.</span>
-              </li>
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 26px;">Освіта:</span> — <span style="color: black;">середня або вища освіта, бажано в галузі безпеки або військової справи.</span>
-              </li>
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 26px;">Фізична підготовка:</span> — <span style="color: black;">високий рівень фізичної підготовки, здатність працювати 
-                  в стресових ситуаціях та витримувати тривалі навантаження.</span>
-              </li>
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 26px;">Особисті якості:</span> — <span style="color: black;">відданість справі, лідерські якості, вміння працювати в команді, відповідальність і уважність до деталей.
-                </span>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div>
-
-      <div class="row justify-content-center" style="margin-top: 30px;">
-        <div class="col-md-8 service-box">
-          <section>
-            <h2 class="section-title-3" style="margin-bottom: 20px; margin-top: 20px; color: #87A210;">Доступні вакансії:</h2>
-            <ul class="section-title-ul">
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 28px;">1. Охоронець вищого рівня </span><span style="color: black;"> — для тих, хто має досвід роботи в 
-                  охороні та бажає працювати з важливими клієнтами.</span>
-              </li>
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 28px;">2. Молодший охоронець</span><span style="color: black;"> — для кандидатів без досвіду, 
-                  які готові навчатися та проходити тренування.</span>
-              </li>
-              <li class="section-title-ptext-3 px-3">
-                <span style="color: #7F8858; font-size: 28px;">3. Спеціаліст з відеонагляду</span><span style="color: black;"> — для тих, хто хоче 
-                  працювати з сучасними системами безпеки та контролю.</span>
-                </li>
-            </ul>
-          </section>
-        </div>
-      </div>
-
-      <div class="row" style="margin-top: 150px; margin-left: -500px;">
-        <div class="col-md-6 service-box" style="margin-left: 370px; padding-left: 500px;"> 
-          <h2 style="color: #87A210; font-size: 40px; font-family: 'BrahmsGotischCyr', sans-serif;">Хочеш до нас?</h2>
-          <p style="color: #A5A59B; font-size: 30px; font-family: 'BrahmsGotischCyr', sans-serif; width: 40%; margin-top: 30px;">Заповнюй форму і ми обов’язково зв’яжемося з тобою</p>
-        </div>
-        <div class="col-md-6 page4-form">
-          <form action="посилання">
-            <div>
-              <label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="Введіть своє ім’я" required />
-            </div>
-            <div>
-              <label for="phone"></label>
-              <input type="tel" id="phone" name="phone" placeholder="050-123-45-67" required />
-            </div>
-            <div>
-              <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Введіть свій Email" required />
-            </div>
-            <button type="submit">Надіслати заявку</button>
-          </form>
-        </div>  
-      </div>
-
-      <button class="na_golovnu-page2_button" style="margin-left: 320px; margin-top: 60px;">
-        <a href="index.html" class="na_golovnu-page2">На головну...</a>
-      </button>
-    </section>
-    
-
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-light">
-    <div class="row">
-      <div class="col-md-4 service-box">
-        <img src="images/logo1.png" alt="logo" />
-      </div>
-      <div class="col-md-4 service-box">
-        <h4 class="footer-contact_info">Контактна інформація:</h4>
-        <p class="footer-p">
-          Телефон: +38 (044) 123-45-67 <br />Email: info@fellguard.com
-          <br />Адреса: м. Кам'яна Фортеця, <br />вул. Охоронців, 12
-        </p>
-      </div>
-      <div class="col-md-4 service-box">
-        <button class="button-join-us">Приєднатися до нас</button>
+  <section class="page4-main_section">
+    <div class="row justify-content-center">
+      <div class="col-md-8 service-box">
+        <section>
+          <h2 class="section-title-3" style="margin-bottom: 20px; margin-top: 20px; font-size: 26px;">Вимоги до кандидатів:</h2>
+  
+          <ul class="section-title-ul">
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 26px;">Досвід роботи:</span> — <span style="color: black;"> досвід у сфері охорони або військової служби є великим плюсом. 
+                Однак, ми також приймаємо кандидатів без досвіду, якщо ви готові пройти відповідне навчання.</span>
+            </li>
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 26px;">Освіта:</span> — <span style="color: black;">середня або вища освіта, бажано в галузі безпеки або військової справи.</span>
+            </li>
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 26px;">Фізична підготовка:</span> — <span style="color: black;">високий рівень фізичної підготовки, здатність працювати 
+                в стресових ситуаціях та витримувати тривалі навантаження.</span>
+            </li>
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 26px;">Особисті якості:</span> — <span style="color: black;">відданість справі, лідерські якості, вміння працювати в команді, відповідальність і уважність до деталей.
+              </span>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
-  </footer>
+
+    <div class="row justify-content-center" style="margin-top: 30px;">
+      <div class="col-md-8 service-box">
+        <section>
+          <h2 class="section-title-3" style="margin-bottom: 20px; margin-top: 20px; color: #87A210;">Доступні вакансії:</h2>
+          <ul class="section-title-ul">
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 28px;">1. Охоронець вищого рівня </span><span style="color: black;"> — для тих, хто має досвід роботи в 
+                охороні та бажає працювати з важливими клієнтами.</span>
+            </li>
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 28px;">2. Молодший охоронець</span><span style="color: black;"> — для кандидатів без досвіду, 
+                які готові навчатися та проходити тренування.</span>
+            </li>
+            <li class="section-title-ptext-3 px-3">
+              <span style="color: #7F8858; font-size: 28px;">3. Спеціаліст з відеонагляду</span><span style="color: black;"> — для тих, хто хоче 
+                працювати з сучасними системами безпеки та контролю.</span>
+              </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 150px; margin-left: -500px;">
+      <div class="col-md-6 service-box" style="margin-left: 370px; padding-left: 500px;"> 
+        <h2 class="hochesh_do_nas">Хочеш до нас?</h2>
+        <p class="zapovnui-formu">Заповнюй форму і ми обов’язково зв’яжемося з тобою</p>
+      </div>
+      <div class="col-md-6 page4-form">
+        <form action="посилання">
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Введіть своє ім’я" required />
+          </div>
+          <div>
+            <label for="phone"></label>
+            <input type="tel" id="phone" name="phone" placeholder="050-123-45-67" required />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Введіть свій Email" required />
+          </div>
+          <button type="submit">Надіслати заявку</button>
+        </form>
+      </div>  
+    </div>
+
+    <button class="na_golovnu-page2_button">
+      <a href="index.html" class="na_golovnu-page2">На головну...</a>
+    </button>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-light">
+  <div class="row">
+    <div class="col-md-4 service-box">
+      <img src="images/logo1.png" alt="logo" class="page4-img-footer" />
+    </div>
+    <div class="col-md-4 service-box">
+      <h4 class="footer-contact_info">Контактна інформація:</h4>
+      <p class="footer-p">
+        Телефон: +38 (044) 123-45-67 <br />Email: info@fellguard.com
+        <br />Адреса: м. Кам'яна Фортеця, <br />вул. Охоронців, 12
+      </p>
+    </div>
+    <div class="col-md-4 service-box">
+      <button class="button-join-us">Приєднатися до нас</button>
+    </div>
+  </div>
+</footer>
 
 
 </body>
