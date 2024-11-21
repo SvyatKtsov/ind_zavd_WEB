@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />    
     <link rel="stylesheet" href="css/style1.css" />
+    <script src="script.js"></script>
 
 
 
@@ -184,18 +185,36 @@
         <p class="zapovnui-formu">Заповнюй форму і ми обов’язково зв’яжемося з тобою</p>
       </div>
       <div class="col-md-6 page4-form">
-        <form action="посилання">
+        <form id="applicationForm">
           <div>
-            <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Введіть своє ім’я" required />
+            <label for="name">Ім’я:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введіть своє ім’я"
+              required
+            />
           </div>
           <div>
-            <label for="phone"></label>
-            <input type="tel" id="phone" name="phone" placeholder="050-123-45-67" required />
+            <label for="phone">Телефон:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="050-123-45-67"
+              required
+            />
           </div>
           <div>
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Введіть свій Email" required />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Введіть свій Email"
+              required
+            />
           </div>
           <button type="submit">Надіслати заявку</button>
         </form>
@@ -227,7 +246,7 @@
   </div>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
