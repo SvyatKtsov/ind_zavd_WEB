@@ -242,7 +242,7 @@ header h1 {
   font-size: 22px;
   font-family: 'BrahmsGotischCyr', sans-serif;
   padding-left: 20px; 
-
+}
 
 
 .section-title-ptext-4{
@@ -345,7 +345,7 @@ header h1 {
   font-family: "BrahmsGotischCyr", sans-serif;
   text-align: center;
 }
-.page2-img-footer { }
+
 
 
 
@@ -417,9 +417,6 @@ header h1 {
   font-size: 30px; 
   font-family: 'BrahmsGotischCyr', sans-serif;
    width: 40%; margin-top: 30px;
-}
-.page4-img-footer {
-
 }
 
 
@@ -657,6 +654,5 @@ header h1 {
   margin-top: 20px;
 }
 
-}
 }
 
