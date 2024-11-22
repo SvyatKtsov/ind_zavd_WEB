@@ -11,50 +11,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style_index.css" />
-
-    <style>
-      /* Navbar styling */
-      .navbar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 20px;
-      }
-
-      .navbar ul li {
-        display: inline;
-      }
-
-      .navbar ul li a {
-        text-decoration: none;
-        color: #BFC0BE; /* Default link color */
-        font-size: 26px;
-        transition: color 0.3s ease; /* Smooth transition */
-      }
-
-      .navbar ul li a:hover {
-        color: #87A210; /* Green color on hover */
-      }
-
-      .menu-text-first_page {
-        text-decoration: underline;
-      }
-
-    </style>
   </head>
 
   <body>
     <nav class="navbar">
       <a href="#"><img src="images/logo1.png" alt="Fellguard_logo" /></a>
       <ul>
-        <li><a class="menu-text-first_page" href="#" style="text-decoration: underline;">Головна</a></li>
+        <li>
+          <a
+            class="menu-text-first_page"
+            href="#"
+            style="text-decoration: underline"
+            >Головна</a
+          >
+        </li>
         <li><a href="history.html">Історія</a></li>
         <li><a href="gallery.html">Галерея</a></li>
         <li><a href="careers.html">Кар'єра</a></li>
       </ul>
     </nav>
-    
 
     <!-- Header Section -->
     <header>
@@ -144,10 +119,14 @@
           </p>
         </div>
         <div class="col-md-4">
-          <button class="button-join-us">Приєднатися до нас</button>
+          <button
+            class="button-join-us"
+            onclick="location.href='careers.html';"
+          >
+            Приєднатися до нас
+          </button>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
